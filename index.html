@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student-driven intelligent resource utilization for a smarter, more sustainable campus.">
+  <title>Smart Resource Hub | Batch C7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-screen" id="loginScreen">
+    <div class="login-visual">
+      <div class="speed-lines" aria-hidden="true"></div>
+      <div class="login-grid" aria-hidden="true"></div>
+      <a class="brand login-brand" href="#" aria-label="Smart Resource Hub">
+        <span class="brand-mark">♻</span>
+        <span><strong>Smart Resource Hub</strong><small>Student Innovation · Batch C7</small></span>
+      </a>
+      <div class="login-visual-copy">
+        <span class="eyebrow">A SMARTER, GREENER CAMPUS</span>
+        <h1>Small ideas.<br><span>Lasting impact.</span></h1>
+        <p>Bring your campus resource ideas together and help build a more sustainable future.</p>
+        <div class="login-pills"><span>♻ Sustainable</span><span>💡 Student-led</span><span>🌱 Impact-driven</span></div>
+      </div>
+      <div class="login-decoration login-leaf">♧</div>
+      <div class="login-decoration login-orb"></div>
+      <div class="login-visual-footer">Student Innovation Project · Batch C7</div>
+    </div>
+    <div class="login-panel">
+      <form id="loginForm" class="login-form">
+        <div class="mobile-login-brand"><span class="brand-mark">♻</span><strong>Smart Resource Hub</strong></div>
+        <span class="eyebrow">WELCOME BACK</span>
+        <h2>Sign in to continue</h2>
+        <p class="login-intro">Access the resource dashboard and student innovation space.</p>
+        <label for="loginEmail">Email address</label>
+        <div class="login-input-wrap"><span>✉</span><input id="loginEmail" type="email" autocomplete="username" placeholder="you@college.edu" required></div>
+        <label for="loginPassword">Password</label>
+        <div class="login-input-wrap"><span>●</span><input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter your password" required minlength="6"><button type="button" id="togglePassword" class="password-toggle" aria-label="Show password">Show</button></div>
+        <div class="login-options"><label class="remember-option"><input type="checkbox" id="rememberMe"> <span>Remember me on this page</span></label><span class="secure-note">Demo sign-in</span></div>
+        <button class="button button-primary login-submit" type="submit">Sign in <span>→</span></button>
+        <p id="loginMessage" class="login-message" role="status" aria-live="polite"></p>
+        <div class="demo-credentials"><strong>Try the demo</strong><span>Email: <code>student@campus.com</code></span><span>Password: <code>campus123</code></span><button type="button" id="fillDemo" class="fill-demo">Use demo credentials</button></div>
+        <p class="login-disclaimer">This is a front-end demonstration. Do not use a real or sensitive password.</p>
+      </form>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Smart Resource Hub home">
+      <span class="brand-mark">♻</span>
+      <span><strong>Smart Resource Hub</strong><small>Student Innovation · Batch C7</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#resources">Resources</a><a href="#workflow">Workflow</a>
+      <a href="#execution">Execution Plan</a><a href="#system-design">System Design</a><a href="#ideas">Submit an Idea</a><a class="nav-cta" href="#dashboard">Dashboard</a>
+      <button class="logout-button" id="logoutButton" type="button">Sign out</button>
+    </nav>
+  </header>
+
+  <main id="appMain" class="app-main is-locked">
+    <section class="hero" id="home">
+      <div class="hero-motion-bg" aria-hidden="true"><span class="motion-ring ring-a"></span><span class="motion-ring ring-b"></span><span class="motion-streak streak-a"></span><span class="motion-streak streak-b"></span></div>
+      <div class="hero-copy">
+        <span class="eyebrow">STUDENT-DRIVEN · HUMAN-CENTERED · SUSTAINABLE</span>
+        <h1>Use resources<br><span>smarter, not more.</span></h1>
+        <p>A student-led approach to identifying resource waste and transforming everyday campus challenges into practical, cost-effective and sustainable solutions.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#ideas">Share an Innovation <span>↗</span></a>
+          <a class="button button-light" href="#workflow">Explore the Process</a>
+        </div>
+        <div class="hero-note"><span class="live-dot"></span> Ideas begin with people. Impact grows through action.</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a sustainable campus">
+        <div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="plant plant-one">♧</div><div class="plant plant-two">♧</div>
+        <div class="campus-building"><div class="roof"></div><div class="building-windows"></div><div class="building-door"></div></div>
+        <div class="resource-chip chip-water">💧 <span>Water</span></div>
+        <div class="resource-chip chip-energy">⚡ <span>Energy</span></div>
+        <div class="resource-chip chip-reuse">♻ <span>Reuse</span></div>
+        <div class="ground"></div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Project focus areas">
+      <div><strong>5</strong><span>Resource categories</span></div>
+      <div><strong>10</strong><span>System design layers</span></div>
+      <div><strong>1</strong><span>Shared goal: less waste</span></div>
+      <div><strong>∞</strong><span>Room for student ideas</span></div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="section-heading">
+        <span class="eyebrow">WHAT WE CAN IMPROVE</span>
+        <h2>Every resource has <span>potential.</span></h2>
+        <p>Observe how resources are used, find inefficiencies, and develop solutions around real campus and community needs.</p>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card"><div class="icon-box blue">💧</div><h3>Water</h3><p>Notice leaks, monitor availability, and encourage responsible water use.</p><span class="tag">Usage & availability</span></article>
+        <article class="resource-card"><div class="icon-box amber">⚡</div><h3>Energy</h3><p>Reduce unnecessary electricity use and identify opportunities for smarter consumption.</p><span class="tag">Power & efficiency</span></article>
+        <article class="resource-card"><div class="icon-box green">♻️</div><h3>Waste</h3><p>Improve waste separation, reuse materials, and make collection more effective.</p><span class="tag">Reduce & reuse</span></article>
+        <article class="resource-card"><div class="icon-box purple">📦</div><h3>Materials</h3><p>Use paper, equipment, and supplies more efficiently and avoid avoidable waste.</p><span class="tag">Materials & equipment</span></article>
+        <article class="resource-card"><div class="icon-box coral">🏫</div><h3>Campus facilities</h3><p>Make better use of classrooms, laboratories, shared spaces, and available facilities.</p><span class="tag">Space & access</span></article>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="dashboard">
+      <div class="section dashboard-intro">
+        <div class="section-heading left">
+          <span class="eyebrow">DEMO DASHBOARD</span>
+          <h2>See the resource picture.</h2>
+          <p>Sample figures for demonstrating a monitoring dashboard. Replace these examples with verified campus data when available.</p>
+        </div>
+        <span class="sample-label">Illustrative data</span>
+      </div>
+      <div class="dashboard-grid">
+        <article class="metric-card">
+          <div class="metric-top"><span>Electricity usage</span><span class="metric-icon">⚡</span></div>
+          <div class="metric-value">1,240 <small>kWh</small></div><div class="metric-sub">Example weekly usage</div>
+          <div class="mini-bars" aria-label="Illustrative weekly electricity chart"><i style="height:42%"></i><i style="height:57%"></i><i style="height:49%"></i><i style="height:72%"></i><i style="height:62%"></i><i style="height:86%"></i><i style="height:55%"></i></div>
+          <div class="chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-top"><span>Water use</span><span class="metric-icon">💧</span></div>
+          <div class="metric-value">8,600 <small>L</small></div><div class="metric-sub">Example weekly usage</div>
+          <div class="progress-track"><span style="width:68%"></span></div><div class="progress-caption"><span>Recorded use</span><strong>68% of demo target</strong></div>
+          <div class="tip-box">💡 <span>Tip: record leaks and unusual usage for review.</span></div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-top"><span>Student ideas</span><span class="metric-icon">💡</span></div>
+          <div class="metric-value" id="ideaCount">0 <small>ideas</small></div><div class="metric-sub">Submitted in this browser session</div>
+          <div class="idea-status"><span><i class="status-dot orange"></i> Awaiting review</span><strong id="pendingCount">0</strong></div>
+          <a class="text-link" href="#ideas">Submit an idea <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="workflow">
+      <div class="section-heading">
+        <span class="eyebrow">METHODOLOGY</span>
+        <h2>From problem to <span>practical change.</span></h2>
+        <p>The execution workflow follows the project methodology: understand the need, build a suitable solution, and evaluate its usefulness.</p>
+      </div>
+      <div class="workflow">
+        <article><span class="step-number">01</span><div><h3>Problem identification</h3><p>Identify inefficient use or wastage of resources.</p></div></article>
+        <article><span class="step-number">02</span><div><h3>Idea generation</h3><p>Invite students to suggest creative, practical ideas.</p></div></article>
+        <article><span class="step-number">03</span><div><h3>Resource analysis</h3><p>Review energy, water, waste, materials, and facilities.</p></div></article>
+        <article><span class="step-number">04</span><div><h3>Technology selection</h3><p>Choose suitable tools such as web apps, IoT, AI, or sensors.</p></div></article>
+        <article><span class="step-number">05</span><div><h3>Solution development</h3><p>Create a low-cost, sustainable prototype.</p></div></article>
+        <article><span class="step-number">06</span><div><h3>Testing & evaluation</h3><p>Assess cost, efficiency, sustainability, and practical usefulness.</p></div></article>
+        <article><span class="step-number">07</span><div><h3>Implementation & feedback</h3><p>Apply successful ideas, monitor outcomes, and improve continuously.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section execution-section" id="execution">
+      <div class="section-heading">
+        <span class="eyebrow">PROJECT EXECUTION PROCESS</span>
+        <h2>How the idea becomes a <span>working solution.</span></h2>
+        <p>This step-by-step plan expands the methodology for the Student Innovation project. Each phase should be completed and reviewed before moving to the next.</p>
+      </div>
+      <div class="execution-grid">
+        <article class="execution-card"><span class="execution-index">PHASE 01</span><div class="execution-icon">🔎</div><h3>Identify the problem</h3><p>Observe campus activities and identify where resources are being wasted, are unavailable, or are being used inefficiently.</p><ul><li>Choose a campus area or activity.</li><li>Describe the resource problem clearly.</li><li>Record observations and the people affected.</li></ul><div class="phase-output"><strong>Output</strong><span>Problem statement</span></div></article>
+        <article class="execution-card"><span class="execution-index">PHASE 02</span><div class="execution-icon">💡</div><h3>Generate ideas</h3><p>Encourage students to propose possible improvements and compare them for practicality and usefulness.</p><ul><li>Brainstorm more than one idea.</li><li>Discuss who benefits from each idea.</li><li>Shortlist an idea that can be tested.</li></ul><div class="phase-output"><strong>Output</strong><span>Selected idea</span></div></article>
+        <article class="execution-card"><span class="execution-index">PHASE 03</span><div class="execution-icon">📊</div><h3>Analyze resources</h3><p>Understand the current resource situation before deciding what to change.</p><ul><li>Check energy and electricity use.</li><li>Review water, waste, and materials.</li><li>Consider campus facilities and constraints.</li></ul><div class="phase-output"><strong>Output</strong><span>Resource analysis</span></div></article>
+        <article class="execution-card"><span class="execution-index">PHASE 04</span><div class="execution-icon">🧩</div><h3>Select technology</h3><p>Choose technology based on the problem, the data needed, and the level of monitoring required.</p><ul><li>Consider IoT and sensors for resource data.</li><li>Consider AI for analysis where appropriate.</li><li>Consider a mobile app or web interface.</li></ul><div class="phase-output"><strong>Output</strong><span>Technology plan</span></div></article>
+        <article class="execution-card"><span class="execution-index">PHASE 05</span><div class="execution-icon">🛠️</div><h3>Develop the solution</h3><p>Build a prototype that translates the selected idea into a practical workflow or digital solution.</p><ul><li>Define inputs and expected outputs.</li><li>Build the selected functions.</li><li>Show resource information clearly to users.</li></ul><div class="phase-output"><strong>Output</strong><span>Working prototype</span></div></article>
+        <article class="execution-card"><span class="execution-index">PHASE 06</span><div class="execution-icon">🧪</div><h3>Test and evaluate</h3><p>Check whether the prototype works and whether it addresses the original resource problem.</p><ul><li>Test normal and unexpected inputs.</li><li>Review usability and reliability.</li><li>Evaluate efficiency, cost, and sustainability.</li></ul><div class="phase-output"><strong>Output</strong><span>Test findings</span></div></article>
+        <article class="execution-card"><span class="execution-index">PHASE 07</span><div class="execution-icon">🌱</div><h3>Implement and improve</h3><p>Use successful findings to guide implementation, monitor results, and gather feedback for further improvement.</p><ul><li>Introduce the solution in the chosen setting.</li><li>Monitor resource use and user feedback.</li><li>Refine the solution based on findings.</li></ul><div class="phase-output"><strong>Output</strong><span>Improved solution</span></div></article>
+      </div>
+      <div class="execution-note"><span>↻</span><p><strong>Continuous improvement loop</strong> — feedback and monitoring can reveal new problems, so the process may return to problem identification and repeat.</p></div>
+    </section>
+
+    <section class="section system-section" id="system-design">
+      <div class="section-heading">
+        <span class="eyebrow">SYSTEM DESIGN</span>
+        <h2>From resource data to <span>action.</span></h2>
+        <p>The project design is organized into ten connected layers. Together, they describe how information can move through a resource-monitoring and innovation system.</p>
+      </div>
+      <div class="system-flow" aria-label="System design layers in sequence">
+        <article><span>01</span><div><h3>Input</h3><p>Enter or collect the information needed to understand a resource-related situation.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>02</span><div><h3>Resource data</h3><p>Organize information about energy, water, waste, materials, or campus facilities.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>03</span><div><h3>Processing</h3><p>Prepare the collected information so it can be reviewed consistently.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>04</span><div><h3>Analysis</h3><p>Look for unusual usage, inefficiencies, or opportunities to improve resource utilization.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>05</span><div><h3>Innovation / solution</h3><p>Translate the identified need into a practical student-driven idea or prototype.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>06</span><div><h3>Decision-making</h3><p>Use the available findings to decide which action or improvement to take.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>07</span><div><h3>Monitoring</h3><p>Observe resource use and the performance of the proposed solution over time.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>08</span><div><h3>Alert</h3><p>Provide a notification when a defined issue or condition needs attention, if supported by the implementation.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>09</span><div><h3>User</h3><p>Present information and actions to students, campus users, or responsible staff.</p></div></article>
+        <div class="flow-arrow">↓</div>
+        <article><span>10</span><div><h3>Feedback</h3><p>Collect feedback and observations to improve the solution and inform the next cycle.</p></div></article>
+      </div>
+      <div class="technology-panel">
+        <div><span class="eyebrow">TECHNOLOGY OPTIONS IN THE PROJECT</span><h3>Choose tools to fit the need.</h3><p>The project methodology identifies these as possible technologies, not mandatory components for every solution.</p></div>
+        <div class="technology-tags"><span>IoT</span><span>AI</span><span>Sensors</span><span>Mobile apps</span><span>Web interface</span></div>
+      </div>
+    </section>
+
+    <section class="idea-section" id="ideas">
+      <div class="idea-copy">
+        <span class="eyebrow">YOUR IDEA MATTERS</span>
+        <h2>What would you improve on campus?</h2>
+        <p>Share a resource problem and a possible solution. In this front-end demo, submissions are kept in the current browser session only; they are not sent to a server.</p>
+        <div class="idea-benefits"><span>✓ Student-centered</span><span>✓ Practical solutions</span><span>✓ Sustainable thinking</span></div>
+      </div>
+      <form id="ideaForm" class="idea-form">
+        <div class="form-title"><span>💡</span><div><h3>Submit an innovation</h3><p>Tell us what you have in mind.</p></div></div>
+        <label for="studentName">Your name</label><input id="studentName" name="studentName" placeholder="Enter your name" required maxlength="80">
+        <label for="resourceType">Resource category</label>
+        <select id="resourceType" name="resourceType" required>
+          <option value="">Choose a category</option><option>Water</option><option>Energy</option><option>Waste</option><option>Materials</option><option>Campus facilities</option><option>Other</option>
+        </select>
+        <label for="problem">Problem you noticed</label><textarea id="problem" name="problem" rows="3" placeholder="Describe the resource-related problem..." required maxlength="500"></textarea>
+        <label for="solution">Your suggested solution</label><textarea id="solution" name="solution" rows="3" placeholder="How could it be improved?" required maxlength="700"></textarea>
+        <button class="button button-primary submit-button" type="submit">Submit idea <span>↗</span></button>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section outcomes-section" id="outcomes">
+      <div class="section-heading">
+        <span class="eyebrow">PROJECT GOALS & EXPECTED OUTCOMES</span><h2>Intelligent use of resources. <span>Lasting impact.</span></h2>
+        <p>The project focuses on student-driven solutions that make resource utilization more sustainable and informed.</p>
+      </div>
+      <div class="outcome-list"><div>✓ Reduce resource wastage</div><div>✓ Improve energy and resource efficiency</div><div>✓ Reduce avoidable operating costs</div><div>✓ Encourage student-led innovation</div><div>✓ Support monitoring and timely alerts</div><div>✓ Use feedback for continuous improvement</div></div>
+      <div class="goal-panel"><div class="goal-panel-mark">◎</div><div><h3>Overall project goal</h3><p>Transform campus resource challenges into practical solutions through problem identification, resource analysis, suitable technology, testing, implementation, monitoring, and feedback.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="brand footer-brand"><span class="brand-mark">♻</span><span><strong>Smart Resource Hub</strong><small>Student Innovation · Batch C7</small></span></div>
+    <p>Project demonstration website · HTML, CSS & JavaScript</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
